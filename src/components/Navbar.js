@@ -25,6 +25,7 @@ import PropTypes from 'prop-types'
             <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault" />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
         </div>
+        
         {/* <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
             <button className="btn btn-primary" type="submit">Search</button>

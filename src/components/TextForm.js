@@ -5,21 +5,24 @@ export default function TextForm(props) {
 
     const handleUpClick = () => {
         setText(text.toUpperCase())
+        props.showAlert("success","Converted to Uppercase")
     }
 
     const handleLoClick = () => {
         setText(text.toLowerCase())
+        props.showAlert("success","Converted to Lowercase")
     }
 
     const handleClearClick = () => {
         setText("")
+        props.showAlert("success","Text Cleared")
     }
 
     const handleOnChange = (event) => {
         setText(event.target.value)
 
     }
-  return (
+    return (
         <>
         <div className='container'>
             <h1>{props.heading}</h1>
